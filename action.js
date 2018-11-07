@@ -16,11 +16,11 @@ function addComment(text) {
     }
 }
 
-function editComment(id) {
+function editComment(id, text) {
     return {
         type: EDIT_COMMENT,
-        text: 'Wyedytowany tekst komentarza',
-        id
+        id,
+        text: text        
     }
 }
 
